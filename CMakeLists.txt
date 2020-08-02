@@ -7,8 +7,8 @@ conan_basic_setup()
 
 set(
         SOURCE_FILES
-        main.cpp
-        Application.cpp
+        src/main.cpp
+        src/Application.cpp
 )
 
 add_executable(Voxelity ${SOURCE_FILES})
