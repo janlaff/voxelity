@@ -5,5 +5,11 @@ set(CMAKE_CXX_STANDARD 20)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-add_executable(Voxelity main.cpp)
+set(
+        SOURCE_FILES
+        main.cpp
+        Application.cpp
+)
+
+add_executable(Voxelity ${SOURCE_FILES})
 target_link_libraries(Voxelity ${CONAN_LIBS})
